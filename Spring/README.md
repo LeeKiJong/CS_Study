@@ -17,6 +17,7 @@
 ---  
 
 ### Spring Framework Module
+<p>
 **1. Spring Core**
 Spring Framework의 핵심 기능을 제공하고, Core 컨테이너의 주요 컴포넌트는 BeanFactory이다.
 **2. Spring Context**
@@ -30,7 +31,8 @@ Spring JDBC DAO 추상 레이어는 다른 데이터베이스 벤더들의 예�
 Spring Framework는 여러 ORM(Object Relational Mapping) Framework에 플러그인 되어, Object 
 Relational(ex, JDO, Hibernate, iBatis)를 제공한다.
 **7. Spring Web MVC**
-Spring Framework는 자체적으로 MVC 프레임워크를 제공하고 있다. 스프링만 사용해도 MVC기반의 웹 어플리케이션을 어렵지 않게 개발 할 수 있다.  
+Spring Framework는 자체적으로 MVC 프레임워크를 제공하고 있다. 스프링만 사용해도 MVC기반의 웹 어플리케이션을 어렵지 않게 개발 할 수 있다.
+</p>  
 
 ---
 
