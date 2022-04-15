@@ -4,8 +4,8 @@
 
 ### Spring Framework
 <p>경량화 된 솔루션. JEE가 제공하는 다양한 기능을 제공하는 것 뿐만 아니라, DI(Dependency Injection)나 AOP(Aspect Oriented Programming)와 같은 기능도 지원한다.</p>
-즉, 개발자가 복잡하고 실수하기 쉬운 Low Level에 신경 쓰지 않고 Business Logic 개발에 전념할 수 있도록 해준다.
-
+즉, 개발자가 복잡하고 실수하기 쉬운 Low Level에 신경 쓰지 않고 Business Logic 개발에 전념할 수 있도록 해준다.  
+  
 **AOP**
 ```
 1. 관심사의 분리를 통해서 소프트웨어의 모듈성을 향상한다.
