@@ -17,22 +17,18 @@
 ---  
 
 ### Spring Framework Module
-<p>
-**1. Spring Core**
-Spring Framework의 핵심 기능을 제공하고, Core 컨테이너의 주요 컴포넌트는 BeanFactory이다.
-**2. Spring Context**
-Spring을 컨테이너로 만든 것이 Spring core의 BeanFactory라면, Spring Framework로 만든 것은 Context module이다. 이 module은 국제화된 메시지 Application 생명주기 이벤트, 유효성 검증 등을 지원함으로써 BeanFactory의 개념을 확장한다
-**3. Spring AOP**
-설정관리 기능을 통해 AOP기능을 Spring Framework와 직접 통합 시킨다.
-**4. Spring DAO**
-Spring JDBC DAO 추상 레이어는 다른 데이터베이스 벤더들의 예외 핸들링과 오류 메세지를 관리하는 중요한 예
-외계층을 제공한다.
-**5. Spring ORM(Web)**
-Spring Framework는 여러 ORM(Object Relational Mapping) Framework에 플러그인 되어, Object 
-Relational(ex, JDO, Hibernate, iBatis)를 제공한다.
-**7. Spring Web MVC**
-Spring Framework는 자체적으로 MVC 프레임워크를 제공하고 있다. 스프링만 사용해도 MVC기반의 웹 어플리케이션을 어렵지 않게 개발 할 수 있다.
-</p>  
+**1. Spring Core**  
+Spring Framework의 핵심 기능을 제공하고, Core 컨테이너의 주요 컴포넌트는 BeanFactory이다.  
+**2. Spring Context**  
+Spring을 컨테이너로 만든 것이 Spring core의 BeanFactory라면, Spring Framework로 만든 것은 Context module이다. 이 module은 국제화된 메시지 Application 생명주기 이벤트, 유효성 검증 등을 지원함으로써 BeanFactory의 개념을 확장한다.  
+**3. Spring AOP**  
+설정관리 기능을 통해 AOP기능을 Spring Framework와 직접 통합 시킨다.  
+**4. Spring DAO**  
+Spring JDBC DAO 추상 레이어는 다른 데이터베이스 벤더들의 예외 핸들링과 오류 메세지를 관리하는 중요한 예외계층을 제공한다.  
+**5. Spring ORM(Web)**  
+Spring Framework는 여러 ORM(Object Relational Mapping) Framework에 플러그인 되어, Object Relational(ex, JDO, Hibernate, iBatis)를 제공한다.  
+**7. Spring Web MVC**  
+Spring Framework는 자체적으로 MVC 프레임워크를 제공하고 있다. 스프링만 사용해도 MVC기반의 웹 어플리케이션을 어렵지 않게 개발 할 수 있다.  
 
 ---
 
@@ -50,6 +46,13 @@ Spring DI Container가 관리하는 객체를 빈(Bean)이라 한다.
 BeanFactory에 여러 가지 컨테이너 기능을 추가한 ApplicationContext가 있다.  
 ```
 ![image](https://user-images.githubusercontent.com/52438368/163546394-254bf92c-dc27-4187-89ef-7862d167f8b8.png)  
+**객체 제어 방식**  
+기존 : 필요한 위치에서 개발자가 필요한 객체 생성 로직 구현  
+IoC : 객체 생성을 Container에게 위임하여 처리  
+**IoC 사용에 따른 장점**  
+객체 간의 결합도를 떨어뜨릴 수 있음.  
+**객체간 결합도가 높으면?**  
+해당 클래스가 유지보수 될 때 그 클래스와 결합된 다른 클래스도 같이 유지보수 되어야 할 가능성이 높음.  
 
 ---  
 
