@@ -168,12 +168,40 @@ void BFS(int s) {
 - 최단거리 : BFS
 - 검색 대상 그래프가 크다 : DFS
 ---
+### Divide and Conquer(분할 정복)
+- 그대로 해결할 수 없는 문제를 작은 문제로 분할하여 문제를 해결하는 방법
+- 주로 Quick Sort나 Merge Sort로 대표되는 정렬 알고리즘
+```
+1. 문제 사례를 하나 이상의 작은 사례로 분할(Divide)한다.  
+2. 작은 사례들을 각각 정복(Conquer)한다. 작은 사례가 충분히 작지 않는 이상 재귀를 사용한다.
+3. 필요하다면, 작은 사례에 대한 해답을 통한(Combine)하여 원래 사례의 해답을 구한다.
+```
+**장점**
+- 문제를 나눔으로써 어려운 문제를 해결.
+**단점**
+함수를 재귀적으로 호출 -> 오버헤드, 스택에 다양한 데이터 보관 -> 스택 오버플로우, 과도한 메모리 사용.
+ex)
+```java
+int consecutive_sum(start, end){
+	if(start == end) return start;
+  
+    mid = (start + end) / 2;
+    
+    return consecutive_sum(start, mid) + consecutive_sum(mid + 1, end);
+}
+# 출력
+System.out.println(consecutive_sum(1, 100))
+# 결과 값
+5050
+```
+---
 ### DP(Dynamic Programming)(동적 프로그래밍)
 - 큰 문제를 작은 문제로 나누어 푸는 문제.('다이나믹'이라는 단어는 아무런 관련이 없다?!)
 - Divide and Conquer(분할정복)과 다른 점 : 작은 문제가 중복이 일어나는지 안일어나는지 차이.
 - DP는 겹치는 문제가 발생하기 때문에 메모이제이션 등이 필요하다.
 - 조건 : 작은 문제가 반복이 일어나는 경우, 같은 문제는 구할 때마다 정답이 같다.
-**Memoization을 이용한 피보나치 수열 알고리즘**
+- 그리디 알고리즘과 비교 : 시간이 오래 걸리지만 항상 최적의 해를 구할 수 있다.
+- **Memoization을 이용한 피보나치 수열 알고리즘**
 ```java
 public class Fibonacci{
 	static int[] dp = new int[1000];      //dp[] 배열에 값을 저장해서 또 그 값이 나온다면 바로 리턴.
