@@ -168,3 +168,27 @@ void BFS(int s) {
 - 최단거리 : BFS
 - 검색 대상 그래프가 크다 : DFS
 ---
+### DP(Dynamic Programming)(동적 프로그래밍)
+- 큰 문제를 작은 문제로 나누어 푸는 문제.('다이나믹'이라는 단어는 아무런 관련이 없다?!)
+- Divide and Conquer(분할정복)과 다른 점 : 작은 문제가 중복이 일어나는지 안일어나는지 차이.
+- DP는 겹치는 문제가 발생하기 때문에 메모이제이션 등이 필요하다.
+- 조건 : 작은 문제가 반복이 일어나는 경우, 같은 문제는 구할 때마다 정답이 같다.
+**Memoization을 이용한 피보나치 수열 알고리즘**
+```java
+public class Fibonacci{
+	static int[] dp = new int[1000];      //dp[] 배열에 값을 저장해서 또 그 값이 나온다면 바로 리턴.
+	static int fibonacci(int n){
+    	if(n == 0) return 0;
+        if(n == 1) return 1;
+        if(dp[n] != 0) return dp[n];
+        dp[n] = fibonacci(n - 2) + fibonacci(n - 1);
+        return dp[n];
+    }
+    
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        System.out.println(fibonacci(N));
+    }
+}
+```
