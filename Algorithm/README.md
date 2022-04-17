@@ -52,6 +52,7 @@ while(iterator.hasNext()){
   if(element.length() % 2 == 0) iterator.remove();
 }
 ```
+---
 ### Heap(Priority Queue)
 - 데이터의 추가 및 삭제를 해도 항상 정렬 상태를 유지
 - Priority Queue의 생성자를 통해서, Heap Tree(Min, Max) 외 다양한 형태 구현 가능
@@ -101,3 +102,4 @@ public static void main (String[] args) throws java.lang.Exception
   }
 }
 ```
+---
