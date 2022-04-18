@@ -66,3 +66,7 @@ IoC : 객체 생성을 Container에게 위임하여 처리
 
 ---  
 
+### Spring MVC
+@Component - @Controller  
+           - @Service(유효성 검사, 페이징 처리)  
+           - @Repository(CRUD)  
