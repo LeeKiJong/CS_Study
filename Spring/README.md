@@ -1,10 +1,10 @@
 # Spring_Study
-[### Spring의 등장 배경]
+### [Spring의 등장 배경]
 <p>EJB를 사용하면 애플리케이션 작성을 쉽게 할 수 있다. 이는 Tracnsaction 관리가 용이하고 로긴, 분산처리, 보안 등에 적합하지만, 개발의 효율성이 낮아지고 개발속도도 떨어지며 배우기 어렵고, 설정해야 할 부분이 많다. 그래서 그 대안으로 나온 게 Spring</p>  
 
 ---  
 
-[### Spring Framework]
+### [Spring Framework]
 <p>경량화 된 솔루션. JEE가 제공하는 다양한 기능을 제공하는 것 뿐만 아니라, DI(Dependency Injection)나 AOP(Aspect Oriented Programming)와 같은 기능도 지원한다.
 즉, 개발자가 복잡하고 실수하기 쉬운 Low Level에 신경 쓰지 않고 Business Logic 개발에 전념할 수 있도록 해준다.  
   
@@ -17,7 +17,7 @@
 ---  
 
 
-[### Spring Framework Module]
+### [Spring Framework Module]
 **1. Spring Core**  
 Spring Framework의 핵심 기능을 제공하고, Core 컨테이너의 주요 컴포넌트는 BeanFactory이다.    
   
@@ -39,7 +39,7 @@ Spring Framework는 자체적으로 MVC 프레임워크를 제공하고 있다. 
 
 ---
 
-[### IoC]
+### [IoC]
 : Inversion of Control, 제어의 역행  
 ```
 객체지향 언어에서 Object간의 연결 관계를 런타임에 결정  
@@ -66,12 +66,12 @@ IoC : 객체 생성을 Container에게 위임하여 처리
 
 ---  
 
-[### DI(Dependency Injection) --> 의존성 주입]
+### [DI(Dependency Injection) --> 의존성 주입]
 **객체 간의 결합을 느슨하게 하는 스프링의 핵심 기술이다.**  
 - 제어의 역행이라는 의미로 사용
 - 느슨한 결합의 주요강점 : 객체는 인터페이스에 의한 의존관계만을 알고 있으며, 이 의존관계는 구현 클래스에 대한 차이를 모르는 채 서로 다른 구현으로 대체가 가능하다.
 ---
-[### 스프링 설정 파일]
+### [스프링 설정 파일]
 - BeanFactory인터페이스  
 **bean요소의 설정**
 - id : 식별자
@@ -86,7 +86,7 @@ IoC : 객체 생성을 Container에게 위임하여 처리
 - factory-method : 속성값으로 static method를 지정해서 해당 method를 이용하여 빈을 생성하도록 설정
 
 ---
-[### 의존 관계를 관리하기 위한 방법]
+### [의존 관계를 관리하기 위한 방법]
 1. Construction Injection : 생성자를 통해서 의존관계를 연결시키는 것을 말함
 2. Setter Injection : 클래스 사이의 의존관계를 연결시키기 위해서 setter메소드를 이용하는 방법을 말함.
 **ApplicationContext.xml**
@@ -98,7 +98,7 @@ IoC : 객체 생성을 Container에게 위임하여 처리
 2. property요소의 속성
    - ref : 자식요소 <ref bean="빈 이름"/> 대신에 사용할 수 있다.
    - value : 자식요소 <value>값</value> 대신에 사용할 수 있다.
-[### Spring MVC]
+### [Spring MVC]
 <p>
 @Component  
   - @Controller  
