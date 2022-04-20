@@ -73,6 +73,7 @@ IoC : 객체 생성을 Container에게 위임하여 처리
 ---
 ### [스프링 설정 파일]
 - BeanFactory인터페이스  
+
 **bean요소의 설정**
 - id : 식별자
 - name : id에 대한 별칭
