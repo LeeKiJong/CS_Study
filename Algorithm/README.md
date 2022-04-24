@@ -1,7 +1,7 @@
 # Algorithm
 ### [Stack]
 - 순차적으로 데이터 접근
-- **중복 허용**
+- **중복 허용**  
 ```java
 Stack<Integer> stack = new Stack<>();
 if(stack.empty()){
