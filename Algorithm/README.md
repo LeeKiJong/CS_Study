@@ -1,6 +1,28 @@
 # Algorithm
+### [자료구조와 알고리즘]
+- 자료구조 : 데이터를 원하는 규칙 또는 목적에 막제 저장하기 위한 구조
+- 알고리즘 : 자료구조에 쌓인 데이터를 활용해 어떠한 문제를 해결하기 위한 여러 동작들의 모임  
+---
+
+### [LinkedList와 ArrayList의 차이]
+- ArrayList는 데이터들이 순서대로 늘어선 배열의 형식을 취하고 있지만, LinkedList는 자료의 주소값으로 서로 연결된 형식을 가지고 있다.
+**ArrayList**
+```
+- 원하는 데이터에 무작위 접근 가능
+- 리스트 크기 제한, 데이터 추가/삭제는 시간이 오래 걸린다.
+```
+**LinkedList**
+```
+- 리스트 크기에 영향 없이 데이터 추가 가능
+- 추가/삭제가 빠르다. 무작위 접근 불가, 순차 접근만 가능
+```  
+
+![image](https://user-images.githubusercontent.com/52438368/165088122-432715e1-b08c-400f-a3ac-ef5fedc054fa.png)  
+---
+
 ### [Stack]
 - 순차적으로 데이터 접근
+- First-in Last-Out FILO 
 - **중복 허용**  
 ```java
 Stack<Integer> stack = new Stack<>();
@@ -55,6 +77,7 @@ while(iterator.hasNext()){
 ---
 ### [Heap(Priority Queue)]
 - 데이터의 추가 및 삭제를 해도 항상 정렬 상태를 유지
+- FIFO 구조지만 정렬해서 나온다. 내부에서 정렬을 하는 게 아니라 나올 때 비교되서 나오는 
 - Priority Queue의 생성자를 통해서, Heap Tree(Min, Max) 외 다양한 형태 구현 가능
 - **중복 허용**
 ```java
@@ -102,6 +125,32 @@ public static void main (String[] args) throws java.lang.Exception
   }
 }
 ```
+---
+### [버블 정렬, 힙 정렬, 머지 정렬, 퀵 정렬]
+**버블 정렬**  
+- 서로 인접한 두 원소를 비교하여 정렬  
+![image](https://user-images.githubusercontent.com/52438368/165090862-8204f09b-1f01-4648-9e28-77796ae4c6bc.png)  
+
+**힙 정렬**  
+- 주어진 데이터를 힙 자료구조로 만들어 최대값 또는 최소값부터 하나씩 꺼내서 정렬  
+![image](https://user-images.githubusercontent.com/52438368/165090914-b0dd50ae-f0ab-4f27-870a-ebd47bf5dbcb.png)  
+
+**머지 정렬**  
+- 주어진 배열을 크기가 1인 배열로 분할하고 합병하면서 정렬  
+![image](https://user-images.githubusercontent.com/52438368/165090973-71fbb27c-4051-4cc1-886e-54c73fe17795.png)   
+
+**퀵 정렬**
+- 매우 빠른 정렬 속도, 피봇 설정 후 피봇을 기준으로 큰 값과 작은 값으로 분할하여 정렬  
+![image](https://user-images.githubusercontent.com/52438368/165090914-b0dd50ae-f0ab-4f27-870a-ebd47bf5dbcb.png)  
+
+---
+### [정렬 알고리즘 시간 복잡도 비교]
+![image](https://user-images.githubusercontent.com/52438368/165090973-71fbb27c-4051-4cc1-886e-54c73fe17795.png)  
+
+---
+### [재귀 알고리즘과 재귀의 시간 복잡도]
+- 함수 내부에서 함수가 자기 자신을 또 다시 호출하여 문제를 해결. 반드시 중단 조건이 필요  
+
 ---
 ### [그래프]
 - 정점(Node)과 그 정점을 연결하는 간선(edge)으로 이루어진 자료구조의 일종.
