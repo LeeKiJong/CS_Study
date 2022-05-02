@@ -59,6 +59,7 @@ sout(hm.size());
 ### [Set]
 - **중복 허용 X**
 - TreeSet은 정렬되어서 저장, HashSet은 정렬 보장 X
+- iterator를 통해 출력
 ```java
 TreeSet<String> ts = new TreeSet<>();
 ts.add("apple");
