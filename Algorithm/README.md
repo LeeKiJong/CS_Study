@@ -17,6 +17,7 @@
 - 추가/삭제가 빠르다. 무작위 접근 불가, 순차 접근만 가능
 ```  
 
+
 ![image](https://user-images.githubusercontent.com/52438368/165088122-432715e1-b08c-400f-a3ac-ef5fedc054fa.png)  
 ---
 
