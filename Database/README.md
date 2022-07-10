@@ -1,6 +1,12 @@
 # Database
-### [목록]
-
+## [목록 바로가기]
+### [KEY]
+### [Join]
+### [SQL Injection]
+### [SQL과 NOSQL의 차이]
+### [Anomaly]
+### [Index]
+### [정규화(Normalization)]
 ---
 ### [KEY]
 #### [Candidate Key(후보키)]
